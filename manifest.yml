@@ -1,0 +1,8 @@
+---
+applications:
+- name: cap-lite
+  description: Show how a CAP application can be created easily, debug and deploy to CF
+  version: 1.0.0
+  memory: 512MB
+  disk_quota: 512MB
+  buildpack: nodejs_buildpack

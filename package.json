@@ -1,0 +1,36 @@
+{
+  "name": "cap-tiny-sample",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "express": "^4",
+    "@sap/xssec": "^3",
+    "sqlite3": "^5.0.2",
+    "passport": "^0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "build": "cds build"
+  },
+  "cds": {
+    "requires": {
+      "auth": "dummy",
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": ":memory:"
+        }
+      }
+    },
+    "features": {
+      "in_memory_db": true
+    }
+  }
+}
